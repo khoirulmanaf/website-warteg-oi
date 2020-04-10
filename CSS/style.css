@@ -1,0 +1,352 @@
+
+*{
+	padding:0;
+	margin:0;
+	font-size	:12px;
+}
+
+body{
+	background	:#cccccc;
+}
+
+.content-heading{
+	width		:100%;
+	background	:;
+	/*padding		:30px 20px;*/
+	margin		:0 auto;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content		:"";
+	display		:table;
+}
+.clearfix:after{
+	clear		:both;
+}
+
+
+
+/* -- LOGO DAN NAVIGASI -- */
+
+
+.wrapper-heading{
+	background	:linear-gradient(#13714c,#3ab67d);
+	width		:100%;
+}
+.wrapper-heading:before,
+.wrapper-heading:after{
+	content		:"";
+	display		:table;
+}
+.wrapper-heading:after{
+	clear		:both;
+}
+
+.wrapper-heading .heading{
+	width			:30%;
+	min-height		:50px;
+	max-height		:100px;
+	float			:left;
+	margin-bottom	:5px;
+
+}
+.wrapper-heading img{
+	display		:block;
+	width		:100px;
+	height		:50px;
+	margin		:0 auto;
+	padding-top	:20px;
+}
+.wrapper-heading h2{
+	color		:black;
+	font-size	:1.8em;
+	text-align	:center;
+}
+.wrapper-heading .nav{
+	position		:relative;
+	right			:100px;
+	display			:flex;
+	justify-content	:space-around;
+	align-items		:center;
+	float			:right;
+	width			:30%;
+	height			:80px;
+	margin-right	:50px;
+}
+
+
+.wrapper-heading a{
+	text-decoration	:none;
+	font-size		:1.5em;
+	color			:white;
+}
+.wrapper-heading a:visited{
+	color			:white;
+}
+
+.wrapper-heading a:hover{
+	color			:black;
+}
+
+.wrapper-heading a:active{
+	color			:black;
+}
+
+
+
+/* -- 2.HEADER -- */
+
+.wrapper-header{
+	background	:linear-gradient(#3ab67d,#a2e494);
+	width		:100%;
+	padding		:20px 0 10px 0;
+}
+.wrapper-header .header{
+	width		:60%;
+	background	:white;
+	margin		:0 auto;
+}
+.wrapper-header img{
+	width		:98%;
+	height		:400px;
+	padding		:5px;
+	margin		:0 auto;
+}
+
+
+
+/* -- 3.CONTENT -- */
+
+
+.content{
+	background	:linear-gradient(#a2e494,#bde0b6);
+	position	:relative;
+	width		:100%;
+	margin		:0 auto;
+}
+.content article{
+	position		:relative;
+	width			:100%;		
+	overflow		:hidden;
+	margin-bottom	:5px;
+}
+#jadwal_buka{
+	display			:none;
+	width			:150%;
+	font-size		:1.2em;
+	padding			:5px;
+	animation		:animate  25s linear infinite;
+}
+@keyframes animate{
+	0%
+	{
+		transform:translate(100%);
+	}
+	100%
+	{
+		transform:translate(-100%);
+	}
+}
+
+.content .main{
+	float			:left;
+	width			:70%;
+	margin			:0 10px 10px 10px;
+	border			:1px solid black;
+	display			:flex;
+	flex-wrap 		:wrap;
+	justify-content	:space-around;
+	align-items		:center;
+}
+.content .main-content{
+	border		:1px solid black;
+	margin		:15px 5px;
+	width		:45%;
+}
+.content .main-content>h2{
+	text-align	:center;
+	font-size	:1.5em;
+	padding		:10px;
+}
+.content .main-content img{
+	display		:block;
+	width		:37%;
+	height		:150px;
+	margin		:0 auto;
+}
+.content .main-content p{
+	font-size	:1.3em;
+	text-indent	:20px;
+	margin		:10px 5px 10px 15px;
+}
+
+.content .aside{
+	float		:right;
+	width		:27%;
+	margin		:0 10px 20px 0;
+	border		:1px solid black;
+}
+.content .aside h3{
+	background		:#3ab67d;
+	color			:white;
+	width			:55%;
+	padding			:5px;
+	margin			:10px auto;
+	text-align		:center;
+	border			:1px solid black;
+	border-radius	:5px;
+	font-size		:1.4em;
+}
+.content .aside-atas{
+	width		:95%;
+	margin		:5px auto;
+	border		:1px solid black;
+}
+.content .aside-atas img{
+	display		:block;
+	width		:100px;
+	height		:100px;
+	margin		:0 auto 10px auto;
+}
+.content .aside-atas p{
+	color			:white;
+	text-align		:center;
+	font-size		:1.3em;
+	padding-bottom	:10px;
+}
+
+.content .aside-bawah{
+	width		:95%;
+	margin		:5px auto;
+	border		:1px solid black;
+}
+.content .aside-bawah ol{
+	padding		:10px;
+	list-style	:decimal inside;
+}
+.content .aside-bawah ol>li{
+	font-size		:1.3em;
+	padding			:20px 0;
+	border-bottom	:1px solid black;
+}
+
+
+
+/* -- 4.FOOTER -- */
+
+
+.footer{
+	background	:linear-gradient(#bde0b6,#e9ebed);
+	width		:100%;
+}
+.footer .footer-atas{
+	padding		:10px;
+}
+.footer .sosmed,
+.footer .info{
+	display			:flex;
+	justify-content	:space-around;
+	align-items		:center;
+	width			:75%;
+	margin			:0 auto;
+}
+.footer .sosmed{
+	width			:75%;
+	max-height		:90px;
+	margin-bottom	:10px;
+}
+
+.footer .facebook,
+.footer .instagram,
+.footer .twitter,
+.footer .whatsapp{
+	width			:20%;
+	display			:flex;
+	flex-direction	:column;
+	justify-content	:center;
+	align-items		:center;
+}
+.footer .sosmed img{
+	width		:35px;
+	height		:35px;
+	margin		:5px;
+}
+.footer .sosmed a{
+	display			:block;
+	color			:black;
+	text-decoration	:none;
+	margin			:5px;
+	font-size		:1.2em;
+}
+.footer .sosmed a:visited{
+
+	
+}
+.footer .sosmed a:hover{
+	
+	
+}
+.footer .sosmed a:active{
+	
+	
+}
+.footer .email,
+.footer .telepon,
+.footer .alamat{
+	width			:30%;
+	display			:flex;
+	justify-content	:center;
+	align-items		:center;
+}
+.footer .info img{
+	width		:32px;
+	height		:32px;
+	margin		:5px;
+}
+.footer .alamat img{
+	margin-left:30px;
+}
+.footer .info p{
+	color		:black;
+	margin		:5px;
+	font-size	:1.2em;
+}
+
+.footer .footer-bawah{
+	background	:#3ab67d;
+	width		:100%;
+}
+.footer .footer-bawah p{
+	color		:black;
+	font-size	:1.3em;
+	text-align	:center;
+	padding		:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- END --*/

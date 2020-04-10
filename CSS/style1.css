@@ -1,0 +1,183 @@
+
+/* --  MEDIA QUERY  -- */
+
+
+/* -- PONSEL -- */
+
+@media screen 
+and (max-width:425px)
+{
+	.content-heading{ 
+		padding	:10px;
+	}
+	
+	/* -- 1.LOGO DAN NAVIGASI -- */
+	.wrapper-heading .heading{
+		width			:100%;
+		float			:none;
+	}
+	.wrapper-heading img{
+		width		:60px;
+		height		:40px;
+	}
+	.wrapper-heading h2{
+		font-size	:1.5em;
+	}
+	
+	.wrapper-heading .nav{
+		right	:0;
+		float	:none;
+		width	:40%;
+		height	:0;
+		padding	:10px 0;
+	}
+	.wrapper-heading a{
+		font-size	:1.3em;
+	}
+	
+	
+	/* -- 2.HEADER -- */
+	
+	.wrapper-header .header{
+		width		:75%;
+	}
+	.wrapper-header img{
+	height		:200px;
+	}
+	
+	/* -- 3.CONTENT -- */
+
+	#jadwal_buka{
+		display		:block;
+		animation		:animate  10s linear infinite;
+	}
+	@keyframes animate{
+	0%
+	{
+		transform:translate(100%);
+	}
+	100%
+	{
+		transform:translate(-100%);
+	}
+	}
+	.content .main{
+		float		:none;
+		width		:95%;
+		display		:block;
+	}
+	.content .main-content{
+		width		:95%;
+		margin		:10px auto;
+	}
+	.content .main-content img{
+		height		:90px;
+	}
+	.content .aside{
+		float		:none;
+		width		:95%;
+		margin		:0 auto;  
+	}
+	.content .aside-atas{
+		display		:none;
+	}
+	
+	
+	/* -- 4.FOOTER -- */
+
+	.footer .footer-atas{
+		padding	:10px 0 50px 0;
+	}
+	.footer .footer-atas:before,
+	.footer .footer-atas:after{
+		content		:"";
+		display		:table;
+	}
+	.footer .footer-atas:after{
+		clear		:both;
+	}
+	
+	
+	.footer .sosmed{
+		display			:block;
+		justify-content	:none;
+		align-items		:none;
+		width			:48%;
+		float			:left;
+		padding-left	:5px;
+	}
+	.footer .facebook,
+	.footer .instagram,
+	.footer .twitter,
+	.footer .whatsapp{
+		width			:100%;
+		display			:block;
+		padding			:5px;
+		margin-bottom	:5px;
+		flex-direction	:none;
+		justify-content	:none;
+		align-items		:none;
+	}
+	.footer .sosmed img{
+		width		:18px;
+		height		:18px;
+		padding		:0 0 0 0 ;
+		float		:left;
+		
+	}
+	.footer .sosmed a{
+		font-size		:1em;
+	}
+	
+	.footer .info{
+		display			:block;
+		justify-content	:none;
+		align-items		:none;
+		width			:50%;
+		float			:right;
+	}
+	.footer .email,
+	.footer .telepon,
+	.footer .alamat{
+		width			:100%;
+		display			:block;
+		justify-content	:none;
+		align-items		:none;
+		padding			:5px;
+		margin-bottom	:5px;
+	}
+	.footer .info img{
+		float		:left;
+		width		:15px;
+		height		:15px;
+	}
+	.footer .alamat img{
+		margin-left:0;
+	}
+	.footer .info p{
+		font-size	:1em;
+		
+	}
+	.footer .footer-bawah p{
+		font-size	:1.1em;
+	}
+}
+
+
+/* -- TABLE -- */
+	@media screen 	
+	and (min-width:426px)
+	and (min-width:768px)
+	{
+		
+ 
+ 
+ 
+ 
+ 
+	} 
+ 
+ 
+ 
+ 
+ 
